@@ -9,6 +9,7 @@ class Triangle
     @third = third
   end
 
-  def 
+  def kind
+  end
 
 end
