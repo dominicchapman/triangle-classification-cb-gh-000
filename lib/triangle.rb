@@ -15,7 +15,6 @@ class Triangle
     elsif self.first == self.second && self.second != self.third
       :isosceles
     end
-      
   end
 
 end
