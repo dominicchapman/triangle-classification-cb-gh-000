@@ -10,9 +10,9 @@ class Triangle
   end
 
   def kind
-    if self.first == self.second && self.second == self.third
+    if first == second && second == third
       :equilateral
-    elsif self.first == self.second && self.second != self.third
+    elsif first == second || second == third || first == third
       :isosceles
     end
   end
