@@ -10,6 +10,9 @@ class Triangle
   end
 
   def kind
+    if self.first == self.second == self.third
+      return :equilateral
+    end
   end
 
 end
