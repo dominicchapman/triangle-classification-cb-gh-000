@@ -14,6 +14,8 @@ class Triangle
       :equilateral
     elsif first == second || second == third || first == third
       :isosceles
+    else
+      :scalene
     end
   end
 
