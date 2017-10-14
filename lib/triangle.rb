@@ -11,7 +11,7 @@ class Triangle
 
   def kind
     if self.first == self.second == self.third
-      return :equilateral
+      :equilateral
     end
   end
 
