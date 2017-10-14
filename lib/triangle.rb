@@ -10,6 +10,7 @@ class Triangle
   end
 
   def kind
+    validate
     if first == second && second == third
       :equilateral
     elsif first == second || second == third || first == third
@@ -19,6 +20,12 @@ class Triangle
     end
   end
 
+  def validate
+    fulfils_triangle_inequality = first + second > third && first + third > second && second + third > first 
+    greater_than_zero = first > 0 && second > 0 && third > 0
+    raise TriangleError if !fulfils_triangle_inequality || !greater_than_zero
+  end
+  
 end
 
 class TriangleError < StandardError
